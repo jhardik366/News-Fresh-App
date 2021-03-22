@@ -21,6 +21,9 @@ class MainActivity : AppCompatActivity(), NewsItemClicked {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        //var my_toolbar : Toolbar = findViewById(R.id.my_toolbar)
+        setSupportActionBar(findViewById(R.id.toolbar))
+
         var recyclerView: RecyclerView = findViewById(R.id.recyclerView)
         recyclerView.layoutManager = LinearLayoutManager(this)
         fetchData()
